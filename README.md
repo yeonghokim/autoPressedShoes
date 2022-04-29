@@ -1,2 +1,4 @@
-# autoPressedShoes
- autoPressedShoes
+# 가변압박신발 연구 프로젝트
+아두이노
+프로세싱
+매트랩
