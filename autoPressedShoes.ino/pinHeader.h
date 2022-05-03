@@ -16,14 +16,6 @@
 
 #define SENSOR_CRITICAL_VALUE 5
 
-void DataFetch_ISEN_P10K(void);
-void RawToDecimal_ISEN_P10k(void);
-void Calculate_ISEN_P10k(void);
-
-
-unsigned long press_decimal,temp_decimal;
-float pressure,temperature;
-unsigned char dat[4];
 
 int mP=5;
 int mI=0;

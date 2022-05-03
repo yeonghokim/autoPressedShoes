@@ -2,31 +2,26 @@
 #include "pinHeader.h"
 #include "encoder.h"
 
-#define DEBUG_MODE
-#define DEBUG_MODE1 //정의 되어있으면 모터 작동함
-#define DEBUG_MODE2 //정의 되어 있으면 걸음걸이 체크
-#define DEBUG_MODE3
+void DataFetch_ISEN_P10K(void);
+void RawToDecimal_ISEN_P10k(void);
+void Calculate_ISEN_P10k(void);
+
+unsigned long press_decimal,temp_decimal;
+float pressure,temperature;
+unsigned char dat[4];
 
 void motorWork(){
   if(target_pressure-current_pressure!=0 && target_pressure!=0){
     if(target_pressure-current_pressure>0){
       digitalWrite(MOTOR_DIR,HIGH);
-#ifdef DEBUG_MODE
       Serial.print(" motor HIGH ");
-#else
-      Serial.print(" m1");
-#endif
+      Serial.println(" m1");
     }else{
       digitalWrite(MOTOR_DIR,LOW);   
-#ifdef DEBUG_MODE
       Serial.print(" motor HIGH ");
-#else
-      Serial.print(" m0");
-#endif
+      Serial.println(" m0");
     }
-#ifdef DEBUG_MODE
     Serial.print("pressure : ");
-#endif 
     Serial.print(target_pressure);
     Serial.print(" ");
     Serial.print(current_pressure);
@@ -36,9 +31,7 @@ void motorWork(){
 
     if(motor_current_degree < 10 && target_pressure-current_pressure<=0){
       float motorspeed=0;
-#ifdef DEBUG_MODE
       Serial.print("motorspeed : ");
-#endif
       Serial.print(motorspeed);
       Serial.println(" ");
 
@@ -51,9 +44,7 @@ void motorWork(){
       float motorspeed_gain= 2 * (motor_current_degree-60);
       motorspeed= motorspeed+motorspeed_gain;
     }*/
-#ifdef DEBUG_MODE
     Serial.print("motorspeed : ");
-#endif
     Serial.print(motorspeed);
     Serial.println(" ");
     analogWrite(MOTOR_PWM,motorspeed);
@@ -71,13 +62,8 @@ void setup() {
   pinMode(MOTOR_ENCODER_B , INPUT_PULLUP);
   attachInterrupt(digitalPinToInterrupt(MOTOR_ENCODER_A), doEncoderA, CHANGE);
   attachInterrupt(digitalPinToInterrupt(MOTOR_ENCODER_B), doEncoderB, CHANGE);
-  
-#ifdef DEBUG_MODE
   Serial.println("startup the autoPressing");
-#endif
-#ifdef DEBUG_MODE
   Serial.println("checking lowPressure");
-#endif
   delay(1000);
   lowPressure=0;
   for (int i=0;i<10;i++){
@@ -87,39 +73,38 @@ void setup() {
     lowPressure+=press_decimal;
     delay(100);
   }
-  
   lowPressure=lowPressure/10;
-
-#ifdef DEBUG_MODE
   Serial.println("checking highPressure");
-#endif
   digitalWrite(MOTOR_DIR,HIGH);
   float motorspeed = 200; 
   analogWrite(MOTOR_PWM,motorspeed);
+  int tmp=0;
   while(1){
     unsigned long mfirst = millis();
     DataFetch_ISEN_P10K();
     RawToDecimal_ISEN_P10k();
     Calculate_ISEN_P10k();
-    if(press_decimal==highPressure) break;
+    if(press_decimal==highPressure&&tmp>100) break;
     highPressure=press_decimal;
     unsigned long msecond= millis();
     unsigned long code_time = msecond-mfirst;
+    tmp++;
     delay(LOOP_DELAY-code_time);
   }
-#ifdef DEBUG_MODE
   Serial.println("checking complete");
-#endif
+  tmp=0;
   while(1){
     unsigned long mfirst = millis();
     DataFetch_ISEN_P10K();
     RawToDecimal_ISEN_P10k();
     Calculate_ISEN_P10k();
+    current_pressure=press_decimal;
     motorWork();
     target_pressure=lowPressure;
-    if(press_decimal==lowPressure) break;
+    if(press_decimal==lowPressure&&tmp>20) break;
     unsigned long msecond= millis();
     unsigned long code_time = msecond-mfirst;
+    tmp++;
     delay(LOOP_DELAY-code_time);
   }
   
@@ -130,15 +115,11 @@ void checkingPressureSensor(int val){
     if(preMillis!=0){
       unsigned long millidelay = millis()-preMillis;
       if(millidelay>10000){
-#ifdef DEBUG_MODE
         Serial.println("걸음걸이에 오류가 있습니다.");
-#endif
       }else{
         distance_walking=millis()-preMillis;
-#ifdef DEBUG_MODE
         Serial.print("걸음걸이 간격 시간은 ");
         Serial.println(distance_walking);
-#endif
         walking_percentage=distance_walking;
       }
     }
@@ -150,23 +131,20 @@ void checkingPressureSensor(int val){
 //루프 함수 ///////////////////////////////////////////////////////////////////////////////////////////
 void loop() {
   unsigned long mfirst = millis();
-#ifdef DEBUG_MODE2
   if(distance_walking!=(-1)){
     float percentage = (float)walking_percentage/(float)distance_walking*100.0;
-#ifdef DEBUG_MODE
     Serial.print("현재 걸음걸이 상태는 ");
     Serial.print(100.0-percentage);
     Serial.println("%%입니다.");
-#endif
     if(first_pressure==(-1)&&(100.0-percentage)==0){
       first_pressure=press_decimal;
     }
     walking_percentage-=LOOP_DELAY;
     if(walking_percentage<=-5000){
-#ifdef DEBUG_MODE
+
       Serial.println("걸음걸이가 멈췄습니다.");
       Serial.println("초기상태로 돌아갑니다.");
-#endif
+
       distance_walking=(-1);
       walking_percentage=(-1);
       preMillis=0;
@@ -174,18 +152,16 @@ void loop() {
     if((100.0-percentage)>80){
       //조여주기
       target_pressure=highPressure;
-#ifdef DEBUG_MODE
+
       Serial.println("target_pressure=3150;");
-#endif
+
     }else if((100.0-percentage)>=20){
       //풀어주기
       target_pressure=lowPressure;
-#ifdef DEBUG_MODE
       Serial.println("target_pressure=2970;");
-#endif
+
     }
   }
-#endif
   int val = 1023- analogRead(A0);
   Serial.print(" Sensor : ");
   Serial.print(val);
@@ -195,12 +171,11 @@ void loop() {
     sensorDelay--;
     if(sensorDelay<0) sensorDelay=0;
   }
-#ifdef DEBUG_MODE1
   motorWork();
-#endif
   DataFetch_ISEN_P10K();
   RawToDecimal_ISEN_P10k();
   Calculate_ISEN_P10k();
+  
   current_pressure=press_decimal;
   if(previous_pressure!=0)
     pressure_diff = (float)(previous_pressure-current_pressure)/(float)LOOP_DELAY;
