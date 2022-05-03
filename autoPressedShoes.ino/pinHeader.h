@@ -53,3 +53,6 @@ int walking_percentage=-1;
 
 int first_pressure = -1;
 int maximal_pressure_interval = 1000;
+
+int lowPressure=2900;
+int highPressure=3200;
