@@ -74,6 +74,8 @@ void setup() {
     delay(100);
   }
   lowPressure=lowPressure/10;
+  Serial.print("lowPressure ");
+  Serial.println(lowPressure);
   Serial.println("checking highPressure");
   digitalWrite(MOTOR_DIR,HIGH);
   float motorspeed = 200; 
@@ -91,8 +93,11 @@ void setup() {
     tmp++;
     delay(LOOP_DELAY-code_time);
   }
+  Serial.print("highPressure ");
+  Serial.println(highPressure);
   Serial.println("checking complete");
   tmp=0;
+  target_pressure=lowPressure;
   while(1){
     unsigned long mfirst = millis();
     DataFetch_ISEN_P10K();
@@ -100,8 +105,7 @@ void setup() {
     Calculate_ISEN_P10k();
     current_pressure=press_decimal;
     motorWork();
-    target_pressure=lowPressure;
-    if(press_decimal==lowPressure&&tmp>20) break;
+    if(abs(target_pressure - current_pressure)<5&&tmp>20) break;
     unsigned long msecond= millis();
     unsigned long code_time = msecond-mfirst;
     tmp++;
