@@ -49,6 +49,6 @@ end
 % B motor speed
 % C target pressure
 
-figure(5),plot(A);
+figure(5),plot(A(100:200,5));
 
 

@@ -1,6 +1,9 @@
 #include <Wire.h>
 #include "pinHeader.h"
 #include "encoder.h"
+#include <Adafruit_Sensor.h>
+#include <Adafruit_BNO055.h>
+#include <utility/imumaths.h>
 
 void DataFetch_ISEN_P10K(void);
 void RawToDecimal_ISEN_P10k(void);
@@ -38,7 +41,9 @@ void motorWork(){
       analogWrite(MOTOR_PWM,motorspeed);
       return;
     }   
-    float motorspeed =  mP * abs(target_pressure - current_pressure) + mI * pressure_integ + mD * pressure_diff ;
+
+    float motorspeed =  pControl + iControl + dControl;
+
       /*
     if(motor_current_degree>60 && (target_pressure - current_pressure)>0){
       float motorspeed_gain= 2 * (motor_current_degree-60);
@@ -63,6 +68,13 @@ void setup() {
   attachInterrupt(digitalPinToInterrupt(MOTOR_ENCODER_A), doEncoderA, CHANGE);
   attachInterrupt(digitalPinToInterrupt(MOTOR_ENCODER_B), doEncoderB, CHANGE);
   Serial.println("startup the autoPressing");
+
+  if (!bno.begin())
+  {
+    /* There was a problem detecting the BNO055 ... check your connections */
+    Serial.println("Ooops, no BNO055 detected ... Check your wiring or I2C ADDR!");
+  }
+  
   Serial.println("checking lowPressure");
   delay(1000);
   lowPressure=0;
@@ -135,6 +147,24 @@ void checkingPressureSensor(int val){
 //루프 함수 ///////////////////////////////////////////////////////////////////////////////////////////
 void loop() {
   unsigned long mfirst = millis();
+
+/*
+  sensors_event_t orientationData , angVelocityData , linearAccelData, magnetometerData, accelerometerData, gravityData;
+  bno.getEvent(&orientationData, Adafruit_BNO055::VECTOR_EULER);
+  bno.getEvent(&angVelocityData, Adafruit_BNO055::VECTOR_GYROSCOPE);
+  bno.getEvent(&linearAccelData, Adafruit_BNO055::VECTOR_LINEARACCEL);
+  bno.getEvent(&magnetometerData, Adafruit_BNO055::VECTOR_MAGNETOMETER);
+  bno.getEvent(&accelerometerData, Adafruit_BNO055::VECTOR_ACCELEROMETER);
+  bno.getEvent(&gravityData, Adafruit_BNO055::VECTOR_GRAVITY);
+  
+  printEvent(&orientationData);
+  printEvent(&angVelocityData);
+  printEvent(&linearAccelData);
+  printEvent(&magnetometerData);
+  printEvent(&accelerometerData);
+  printEvent(&gravityData);
+
+  */
   if(distance_walking!=(-1)){
     float percentage = (float)walking_percentage/(float)distance_walking*100.0;
     Serial.print("현재 걸음걸이 상태는 ");
@@ -145,7 +175,6 @@ void loop() {
     }
     walking_percentage-=LOOP_DELAY;
     if(walking_percentage<=-5000){
-
       Serial.println("걸음걸이가 멈췄습니다.");
       Serial.println("초기상태로 돌아갑니다.");
 
@@ -156,19 +185,16 @@ void loop() {
     if((100.0-percentage)>80){
       //조여주기
       target_pressure=highPressure;
-
       Serial.println("target_pressure=3150;");
-
     }else if((100.0-percentage)>=20){
       //풀어주기
       target_pressure=lowPressure;
       Serial.println("target_pressure=2970;");
-
     }
   }
   int val = 1023- analogRead(A0);
   Serial.print(" Sensor : ");
-  Serial.print(val);
+  Serial.println(val);
   if(sensorDelay<=0){
     checkingPressureSensor(val);
   }else{
@@ -181,14 +207,72 @@ void loop() {
   Calculate_ISEN_P10k();
   
   current_pressure=press_decimal;
-  if(previous_pressure!=0)
-    pressure_diff = (float)(previous_pressure-current_pressure)/(float)LOOP_DELAY;
-  if(pressure_Integral)
-    pressure_integ += (float)(target_pressure-current_pressure)*(float)LOOP_DELAY;
-  previous_pressure=current_pressure;
+  
+  errorGap = target_pressure - current_pressure - realError; 
+  realError = target_pressure - current_pressure;
+  accError = accError + realError;
+  pControl = mP * realError;
+  iControl = mI * (accError * LOOP_DELAY);
+  dControl = mD * (errorGap / LOOP_DELAY);  
   unsigned long msecond= millis();
   unsigned long code_time = msecond-mfirst;
   delay(LOOP_DELAY-code_time);
+}
+//--------------------------------------------------------------------------------------------------------------------
+void printEvent(sensors_event_t* event) {
+  double x = -1000000, y = -1000000 , z = -1000000; //dumb values, easy to spot problem
+  if (event->type == SENSOR_TYPE_ACCELEROMETER) {
+    Serial.print("Accl:");
+    x = event->acceleration.x;
+    y = event->acceleration.y;
+    z = event->acceleration.z;
+  }
+  else if (event->type == SENSOR_TYPE_ORIENTATION) {
+    Serial.print("Orient:");
+    x = event->orientation.x;
+    y = event->orientation.y;
+    z = event->orientation.z;
+  }
+  else if (event->type == SENSOR_TYPE_MAGNETIC_FIELD) {
+    Serial.print("Mag:");
+    x = event->magnetic.x;
+    y = event->magnetic.y;
+    z = event->magnetic.z;
+  }
+  else if (event->type == SENSOR_TYPE_GYROSCOPE) {
+    Serial.print("Gyro:");
+    x = event->gyro.x;
+    y = event->gyro.y;
+    z = event->gyro.z;
+  }
+  else if (event->type == SENSOR_TYPE_ROTATION_VECTOR) {
+    Serial.print("Rot:");
+    x = event->gyro.x;
+    y = event->gyro.y;
+    z = event->gyro.z;
+  }
+  else if (event->type == SENSOR_TYPE_LINEAR_ACCELERATION) {
+    Serial.print("Linear:");
+    x = event->acceleration.x;
+    y = event->acceleration.y;
+    z = event->acceleration.z;
+  }
+  else if (event->type == SENSOR_TYPE_GRAVITY) {
+    Serial.print("Gravity:");
+    x = event->acceleration.x;
+    y = event->acceleration.y;
+    z = event->acceleration.z;
+  }
+  else {
+    Serial.print("Unk:");
+  }
+
+  Serial.print("\tx= ");
+  Serial.print(x);
+  Serial.print(" |\ty= ");
+  Serial.print(y);
+  Serial.print(" |\tz= ");
+  Serial.println(z);
 }
 //---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 // 압력센서 모듈에서 압력 및 온도 Raw Data를 Fetch

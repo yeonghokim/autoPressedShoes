@@ -20,9 +20,12 @@ int mP=5;
 int mI=0;
 int mD=0;
 
-float pressure_diff;
-float pressure_integ=0;
-boolean pressure_Integral=false;
+float pControl=0;
+float iControl=0;
+float dControl=0;
+float errorGap=0;
+float realError=0;
+float accError=0;
 
 int target_pressure;
 int current_pressure;
