@@ -9,6 +9,17 @@ void DataFetch_ISEN_P10K(void);
 void RawToDecimal_ISEN_P10k(void);
 void Calculate_ISEN_P10k(void);
 
+  /* Board layout:
+         +----------+
+         |         *| RST   PITCH  ROLL  HEADING
+     ADR |*        *| SCL
+     INT |*        *| SDA     ^            /->
+     PS1 |*        *| GND     |            |
+     PS0 |*        *| 3VO     Y    Z-->    \-X
+         |         *| VIN
+         +----------+
+  */
+
 unsigned long press_decimal,temp_decimal;
 float pressure,temperature;
 unsigned char dat[4];
