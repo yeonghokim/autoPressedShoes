@@ -1,0 +1,867 @@
+Gyro:	x= 0.01 |	y= 0.01 |	z= 0.01
+Linear:	x= -0.10 |	y= 0.05 |	z= -0.05
+time : 5935 Calibration: Sys=0 Gyro=0 Accel=1 Mag=0
+Gyro:	x= 0.01 |	y= 0.01 |	z= 0.01
+Linear:	x= -0.16 |	y= 0.03 |	z= -0.07
+time : 5953 Calibration: Sys=0 Gyro=0 Accel=1 Mag=0
+Gyro:	x= 0.01 |	y= 0.00 |	z= 0.01
+Linear:	x= -0.12 |	y= 0.06 |	z= -0.06
+time : 5971 Calibration: Sys=0 Gyro=0 Accel=1 Mag=0
+Gyro:	x= 0.01 |	y= -0.00 |	z= 0.01
+Linear:	x= -0.05 |	y= 0.04 |	z= -0.13
+time : 5989 Calibration: Sys=0 Gyro=0 Accel=1 Mag=0
+Gyro:	x= 0.01 |	y= 0.01 |	z= 0.01
+Linear:	x= -0.08 |	y= 0.05 |	z= -0.07
+time : 6009 Calibration: Sys=0 Gyro=0 Accel=1 Mag=0
+Gyro:	x= 0.01 |	y= 0.01 |	z= 0.01
+Linear:	x= -0.11 |	y= 0.05 |	z= -0.06
+time : 6028 Calibration: Sys=0 Gyro=0 Accel=1 Mag=0
+Gyro:	x= 0.01 |	y= 0.01 |	z= 0.01
+Linear:	x= -0.11 |	y= 0.07 |	z= -0.07
+time : 6048 Calibration: Sys=0 Gyro=0 Accel=1 Mag=0
+Gyro:	x= 0.01 |	y= 0.01 |	z= 0.01
+Linear:	x= -0.12 |	y= 0.07 |	z= -0.06
+time : 6065 Calibration: Sys=0 Gyro=0 Accel=1 Mag=0
+Gyro:	x= 0.01 |	y= 0.00 |	z= 0.00
+Linear:	x= -0.12 |	y= 0.07 |	z= -0.02
+time : 6083 Calibration: Sys=0 Gyro=0 Accel=1 Mag=0
+Gyro:	x= 0.00 |	y= -0.00 |	z= 0.00
+Linear:	x= -0.13 |	y= 0.04 |	z= -0.06
+time : 6102 Calibration: Sys=0 Gyro=0 Accel=1 Mag=0
+Gyro:	x= 0.00 |	y= -0.01 |	z= -0.00
+Linear:	x= -0.14 |	y= 0.09 |	z= -0.06
+time : 6121 Calibration: Sys=0 Gyro=0 Accel=1 Mag=0
+Gyro:	x= 0.01 |	y= -0.01 |	z= -0.00
+Linear:	x= -0.11 |	y= 0.01 |	z= -0.05
+time : 6139 Calibration: Sys=0 Gyro=0 Accel=1 Mag=0
+Gyro:	x= 0.01 |	y= -0.02 |	z= -0.01
+Linear:	x= -0.14 |	y= 0.05 |	z= -0.09
+time : 6159 Calibration: Sys=0 Gyro=0 Accel=1 Mag=0
+Gyro:	x= 0.02 |	y= -0.03 |	z= -0.00
+Linear:	x= -0.14 |	y= 0.02 |	z= -0.03
+time : 6175 Calibration: Sys=0 Gyro=0 Accel=1 Mag=0
+Gyro:	x= 0.03 |	y= -0.03 |	z= 0.00
+Linear:	x= -0.14 |	y= 0.12 |	z= -0.07
+time : 6193 Calibration: Sys=0 Gyro=0 Accel=1 Mag=0
+Gyro:	x= 0.03 |	y= -0.05 |	z= -0.00
+Linear:	x= -0.26 |	y= 0.02 |	z= 0.00
+time : 6210 Calibration: Sys=0 Gyro=0 Accel=1 Mag=0
+Gyro:	x= 0.03 |	y= -0.06 |	z= -0.01
+Linear:	x= -0.30 |	y= -0.08 |	z= 0.05
+time : 6227 Calibration: Sys=0 Gyro=0 Accel=1 Mag=0
+Gyro:	x= 0.04 |	y= -0.11 |	z= -0.02
+Linear:	x= -0.28 |	y= 0.08 |	z= 0.06
+time : 6246 Calibration: Sys=0 Gyro=0 Accel=1 Mag=0
+Gyro:	x= 0.05 |	y= -0.14 |	z= -0.02
+Linear:	x= -0.16 |	y= -0.08 |	z= 0.08
+time : 6262 Calibration: Sys=0 Gyro=0 Accel=1 Mag=0
+Gyro:	x= 0.06 |	y= -0.15 |	z= -0.02
+Linear:	x= -0.38 |	y= -0.03 |	z= -0.02
+time : 6278 Calibration: Sys=0 Gyro=0 Accel=1 Mag=0
+Gyro:	x= 0.07 |	y= -0.15 |	z= 0.01
+Linear:	x= 0.18 |	y= 0.09 |	z= 0.02
+time : 6298 Calibration: Sys=0 Gyro=0 Accel=1 Mag=0
+Gyro:	x= 0.04 |	y= -0.06 |	z= 0.06
+Linear:	x= 1.12 |	y= 0.16 |	z= -0.50
+time : 6314 Calibration: Sys=0 Gyro=0 Accel=1 Mag=0
+Gyro:	x= 0.03 |	y= 0.28 |	z= 0.20
+Linear:	x= 0.23 |	y= 2.94 |	z= -1.20
+time : 6332 Calibration: Sys=0 Gyro=0 Accel=1 Mag=0
+Gyro:	x= -0.08 |	y= 0.57 |	z= 0.53
+Linear:	x= 5.43 |	y= 5.27 |	z= -1.27
+time : 6350 Calibration: Sys=0 Gyro=0 Accel=1 Mag=0
+Gyro:	x= -0.84 |	y= 1.82 |	z= 1.88
+Linear:	x= 0.48 |	y= -8.93 |	z= 4.52
+time : 6367 Calibration: Sys=0 Gyro=0 Accel=1 Mag=0
+Gyro:	x= -0.27 |	y= 2.92 |	z= 2.02
+Linear:	x= 6.21 |	y= -6.47 |	z= 3.90
+time : 6386 Calibration: Sys=0 Gyro=0 Accel=1 Mag=0
+Gyro:	x= 1.17 |	y= 3.23 |	z= 1.61
+Linear:	x= 3.21 |	y= -10.41 |	z= 11.02
+time : 6406 Calibration: Sys=0 Gyro=0 Accel=1 Mag=0
+Gyro:	x= 1.28 |	y= 1.67 |	z= 0.42
+Linear:	x= 5.86 |	y= -6.43 |	z= 9.02
+time : 6422 Calibration: Sys=0 Gyro=0 Accel=1 Mag=0
+Gyro:	x= 0.59 |	y= 0.78 |	z= -0.09
+Linear:	x= 11.84 |	y= -3.77 |	z= -1.63
+time : 6441 Calibration: Sys=0 Gyro=0 Accel=1 Mag=0
+Gyro:	x= -0.22 |	y= -0.01 |	z= -0.52
+Linear:	x= 11.76 |	y= -1.83 |	z= -2.66
+time : 6459 Calibration: Sys=0 Gyro=0 Accel=1 Mag=0
+Gyro:	x= -0.49 |	y= -0.12 |	z= -0.49
+Linear:	x= 10.78 |	y= -0.97 |	z= -0.80
+time : 6476 Calibration: Sys=0 Gyro=0 Accel=1 Mag=0
+Gyro:	x= -0.99 |	y= -0.45 |	z= -0.49
+Linear:	x= 10.37 |	y= -1.22 |	z= -0.03
+time : 6495 Calibration: Sys=0 Gyro=0 Accel=1 Mag=0
+Gyro:	x= -1.09 |	y= -0.86 |	z= -0.57
+Linear:	x= 9.79 |	y= -0.10 |	z= -0.07
+time : 6511 Calibration: Sys=0 Gyro=0 Accel=1 Mag=0
+Gyro:	x= -1.07 |	y= -0.96 |	z= -0.57
+Linear:	x= 9.20 |	y= 0.42 |	z= 0.12
+time : 6528 Calibration: Sys=0 Gyro=0 Accel=1 Mag=0
+Gyro:	x= -1.21 |	y= -1.03 |	z= -0.54
+Linear:	x= 6.61 |	y= 0.92 |	z= 2.50
+time : 6547 Calibration: Sys=0 Gyro=0 Accel=1 Mag=0
+Gyro:	x= -1.54 |	y= -1.29 |	z= -0.55
+Linear:	x= 5.01 |	y= 0.20 |	z= 4.14
+time : 6563 Calibration: Sys=0 Gyro=0 Accel=1 Mag=0
+Gyro:	x= -1.57 |	y= -1.48 |	z= -0.59
+Linear:	x= 2.72 |	y= -0.90 |	z= 5.16
+time : 6580 Calibration: Sys=0 Gyro=0 Accel=1 Mag=0
+Gyro:	x= -1.23 |	y= -1.87 |	z= -0.65
+Linear:	x= 1.94 |	y= -0.96 |	z= 4.91
+time : 6599 Calibration: Sys=0 Gyro=0 Accel=1 Mag=0
+Gyro:	x= -0.69 |	y= -2.08 |	z= -0.64
+Linear:	x= 0.00 |	y= -0.18 |	z= 3.98
+time : 6615 Calibration: Sys=0 Gyro=0 Accel=1 Mag=0
+Gyro:	x= -0.49 |	y= -2.13 |	z= -0.57
+Linear:	x= -1.62 |	y= -0.10 |	z= 3.44
+time : 6634 Calibration: Sys=0 Gyro=0 Accel=1 Mag=0
+Gyro:	x= -0.63 |	y= -2.04 |	z= -0.55
+Linear:	x= -4.30 |	y= -0.06 |	z= 3.66
+time : 6653 Calibration: Sys=0 Gyro=0 Accel=1 Mag=0
+Gyro:	x= -0.79 |	y= -2.03 |	z= -0.58
+Linear:	x= -5.35 |	y= -0.31 |	z= 4.00
+time : 6669 Calibration: Sys=0 Gyro=0 Accel=1 Mag=0
+Gyro:	x= -1.13 |	y= -2.17 |	z= -0.79
+Linear:	x= -6.67 |	y= -0.86 |	z= 4.06
+time : 6688 Calibration: Sys=0 Gyro=0 Accel=1 Mag=0
+Gyro:	x= -0.90 |	y= -2.47 |	z= -1.13
+Linear:	x= -6.62 |	y= -0.22 |	z= 1.22
+time : 6708 Calibration: Sys=0 Gyro=0 Accel=1 Mag=0
+Gyro:	x= -0.24 |	y= -2.51 |	z= -1.34
+Linear:	x= -5.76 |	y= 2.71 |	z= -2.45
+time : 6724 Calibration: Sys=0 Gyro=0 Accel=1 Mag=0
+Gyro:	x= 0.17 |	y= -2.14 |	z= -1.25
+Linear:	x= -6.23 |	y= 4.00 |	z= -3.95
+time : 6743 Calibration: Sys=0 Gyro=0 Accel=1 Mag=0
+Gyro:	x= 0.20 |	y= -1.86 |	z= -1.17
+Linear:	x= -8.11 |	y= 3.41 |	z= -4.07
+time : 6760 Calibration: Sys=0 Gyro=0 Accel=1 Mag=0
+Gyro:	x= 0.17 |	y= -1.29 |	z= -1.02
+Linear:	x= -9.00 |	y= 2.81 |	z= -4.03
+time : 6777 Calibration: Sys=0 Gyro=0 Accel=1 Mag=0
+Gyro:	x= 0.45 |	y= -0.92 |	z= -0.88
+Linear:	x= -10.33 |	y= 1.99 |	z= -4.51
+time : 6796 Calibration: Sys=0 Gyro=0 Accel=1 Mag=0
+Gyro:	x= 0.77 |	y= -0.64 |	z= -0.66
+Linear:	x= -10.72 |	y= 3.19 |	z= -5.67
+time : 6812 Calibration: Sys=0 Gyro=0 Accel=1 Mag=0
+Gyro:	x= 0.72 |	y= -0.46 |	z= -0.50
+Linear:	x= -10.51 |	y= 3.59 |	z= -5.93
+time : 6829 Calibration: Sys=0 Gyro=0 Accel=1 Mag=0
+Gyro:	x= 0.44 |	y= 0.05 |	z= -0.18
+Linear:	x= -10.28 |	y= 3.26 |	z= -5.83
+time : 6848 Calibration: Sys=0 Gyro=0 Accel=1 Mag=0
+Gyro:	x= 0.44 |	y= 0.76 |	z= 0.15
+Linear:	x= -14.74 |	y= 0.08 |	z= -8.98
+time : 6865 Calibration: Sys=0 Gyro=0 Accel=1 Mag=0
+Gyro:	x= 1.97 |	y= 2.79 |	z= 1.26
+Linear:	x= 1.47 |	y= -3.72 |	z= -3.12
+time : 6883 Calibration: Sys=0 Gyro=0 Accel=1 Mag=0
+Gyro:	x= 2.00 |	y= 3.07 |	z= 1.27
+Linear:	x= -0.65 |	y= -2.26 |	z= 0.17
+time : 6901 Calibration: Sys=0 Gyro=0 Accel=1 Mag=0
+Gyro:	x= 0.65 |	y= 4.71 |	z= 0.25
+Linear:	x= -8.44 |	y= 2.14 |	z= 2.79
+time : 6917 Calibration: Sys=0 Gyro=0 Accel=1 Mag=0
+Gyro:	x= -0.04 |	y= 4.00 |	z= -0.24
+Linear:	x= -5.38 |	y= 0.52 |	z= 10.39
+time : 6937 Calibration: Sys=0 Gyro=0 Accel=1 Mag=0
+Gyro:	x= 0.56 |	y= 2.87 |	z= 0.85
+Linear:	x= -8.87 |	y= -4.01 |	z= 15.69
+time : 6957 Calibration: Sys=0 Gyro=0 Accel=1 Mag=0
+Gyro:	x= 0.68 |	y= 1.02 |	z= 0.44
+Linear:	x= 1.73 |	y= -10.19 |	z= -2.38
+time : 6973 Calibration: Sys=0 Gyro=0 Accel=1 Mag=0
+Gyro:	x= 1.31 |	y= 1.10 |	z= 0.07
+Linear:	x= -9.70 |	y= 15.34 |	z= 14.38
+time : 6991 Calibration: Sys=0 Gyro=0 Accel=1 Mag=0
+Gyro:	x= 0.74 |	y= 1.28 |	z= 0.31
+Linear:	x= -1.96 |	y= 1.83 |	z= 1.22
+time : 7010 Calibration: Sys=0 Gyro=0 Accel=1 Mag=0
+Gyro:	x= 0.29 |	y= -0.03 |	z= -0.02
+Linear:	x= 1.85 |	y= 2.51 |	z= 1.42
+time : 7026 Calibration: Sys=0 Gyro=0 Accel=1 Mag=0
+Gyro:	x= 0.12 |	y= 0.00 |	z= -0.02
+Linear:	x= -1.55 |	y= 0.63 |	z= 0.75
+time : 7046 Calibration: Sys=0 Gyro=0 Accel=1 Mag=0
+Gyro:	x= 0.05 |	y= -0.11 |	z= -0.05
+Linear:	x= -0.43 |	y= 0.00 |	z= 0.21
+time : 7062 Calibration: Sys=0 Gyro=0 Accel=1 Mag=0
+Gyro:	x= 0.04 |	y= -0.11 |	z= -0.03
+Linear:	x= -0.06 |	y= 0.28 |	z= 0.22
+time : 7078 Calibration: Sys=0 Gyro=0 Accel=1 Mag=0
+Gyro:	x= -0.00 |	y= -0.08 |	z= -0.04
+Linear:	x= -0.22 |	y= 0.15 |	z= 0.00
+time : 7098 Calibration: Sys=0 Gyro=0 Accel=1 Mag=0
+Gyro:	x= -0.01 |	y= -0.08 |	z= -0.05
+Linear:	x= -0.21 |	y= -0.04 |	z= -0.10
+time : 7114 Calibration: Sys=0 Gyro=0 Accel=1 Mag=0
+Gyro:	x= 0.00 |	y= -0.10 |	z= -0.04
+Linear:	x= -0.09 |	y= 0.35 |	z= 0.00
+time : 7131 Calibration: Sys=0 Gyro=0 Accel=1 Mag=0
+Gyro:	x= -0.01 |	y= -0.11 |	z= -0.05
+Linear:	x= -0.08 |	y= 0.18 |	z= -0.14
+time : 7150 Calibration: Sys=0 Gyro=0 Accel=1 Mag=0
+Gyro:	x= -0.02 |	y= -0.10 |	z= -0.05
+Linear:	x= 0.00 |	y= -0.46 |	z= -0.27
+time : 7166 Calibration: Sys=0 Gyro=0 Accel=1 Mag=0
+Gyro:	x= 0.03 |	y= -0.04 |	z= 0.02
+Linear:	x= 0.34 |	y= -0.68 |	z= 0.23
+time : 7186 Calibration: Sys=0 Gyro=0 Accel=1 Mag=0
+Gyro:	x= 0.09 |	y= -0.06 |	z= 0.02
+Linear:	x= -0.39 |	y= 1.21 |	z= -0.56
+time : 7204 Calibration: Sys=0 Gyro=0 Accel=1 Mag=0
+Gyro:	x= 0.10 |	y= -0.02 |	z= 0.11
+Linear:	x= 0.00 |	y= -0.93 |	z= -0.34
+time : 7221 Calibration: Sys=0 Gyro=0 Accel=1 Mag=0
+Gyro:	x= 0.15 |	y= -0.07 |	z= 0.10
+Linear:	x= -0.07 |	y= 0.34 |	z= -0.01
+time : 7239 Calibration: Sys=0 Gyro=0 Accel=1 Mag=0
+Gyro:	x= 0.15 |	y= -0.04 |	z= 0.14
+Linear:	x= -0.17 |	y= -0.84 |	z= 0.04
+time : 7259 Calibration: Sys=0 Gyro=0 Accel=1 Mag=0
+Gyro:	x= 0.18 |	y= -0.03 |	z= 0.10
+Linear:	x= -0.01 |	y= 0.05 |	z= -0.41
+time : 7275 Calibration: Sys=0 Gyro=0 Accel=1 Mag=0
+Gyro:	x= 0.19 |	y= 0.05 |	z= 0.12
+Linear:	x= 0.13 |	y= 0.21 |	z= -0.26
+time : 7294 Calibration: Sys=0 Gyro=0 Accel=1 Mag=0
+Gyro:	x= 0.21 |	y= 0.13 |	z= 0.15
+Linear:	x= 0.04 |	y= -0.19 |	z= -0.27
+time : 7311 Calibration: Sys=0 Gyro=0 Accel=1 Mag=0
+Gyro:	x= 0.26 |	y= 0.14 |	z= 0.18
+Linear:	x= 0.43 |	y= -0.02 |	z= -0.04
+time : 7327 Calibration: Sys=0 Gyro=0 Accel=1 Mag=0
+Gyro:	x= 0.30 |	y= 0.19 |	z= 0.23
+Linear:	x= -0.22 |	y= 0.34 |	z= 0.06
+time : 7347 Calibration: Sys=0 Gyro=0 Accel=1 Mag=0
+Gyro:	x= 0.27 |	y= 0.18 |	z= 0.20
+Linear:	x= 0.08 |	y= 0.07 |	z= -0.21
+time : 7363 Calibration: Sys=0 Gyro=0 Accel=1 Mag=0
+Gyro:	x= 0.27 |	y= 0.21 |	z= 0.20
+Linear:	x= -0.12 |	y= 0.57 |	z= 0.30
+time : 7379 Calibration: Sys=0 Gyro=0 Accel=1 Mag=0
+Gyro:	x= 0.22 |	y= 0.18 |	z= 0.21
+Linear:	x= 0.43 |	y= -0.10 |	z= 0.00
+time : 7399 Calibration: Sys=0 Gyro=0 Accel=1 Mag=0
+Gyro:	x= 0.19 |	y= 0.30 |	z= 0.32
+Linear:	x= 0.20 |	y= -0.10 |	z= 0.40
+time : 7415 Calibration: Sys=0 Gyro=0 Accel=1 Mag=0
+Gyro:	x= 0.14 |	y= 0.36 |	z= 0.43
+Linear:	x= -0.09 |	y= 0.42 |	z= 0.30
+time : 7434 Calibration: Sys=0 Gyro=0 Accel=1 Mag=0
+Gyro:	x= 0.06 |	y= 0.43 |	z= 0.47
+Linear:	x= 0.66 |	y= 1.58 |	z= 0.53
+time : 7452 Calibration: Sys=0 Gyro=0 Accel=1 Mag=0
+Gyro:	x= -0.02 |	y= 0.52 |	z= 0.50
+Linear:	x= 0.54 |	y= 0.81 |	z= 0.79
+time : 7468 Calibration: Sys=0 Gyro=0 Accel=1 Mag=0
+Gyro:	x= -0.21 |	y= 0.81 |	z= 0.46
+Linear:	x= 0.25 |	y= 0.72 |	z= 0.99
+time : 7488 Calibration: Sys=0 Gyro=0 Accel=1 Mag=0
+Gyro:	x= -0.23 |	y= 1.38 |	z= 0.53
+Linear:	x= 1.57 |	y= -0.06 |	z= 0.69
+time : 7508 Calibration: Sys=0 Gyro=0 Accel=1 Mag=0
+Gyro:	x= -0.21 |	y= 2.14 |	z= 0.92
+Linear:	x= 1.37 |	y= 0.88 |	z= 0.80
+time : 7524 Calibration: Sys=0 Gyro=0 Accel=1 Mag=0
+Gyro:	x= -0.27 |	y= 3.41 |	z= 1.78
+Linear:	x= 8.04 |	y= -3.41 |	z= 2.37
+time : 7542 Calibration: Sys=0 Gyro=0 Accel=1 Mag=0
+Gyro:	x= -0.20 |	y= 4.61 |	z= 2.19
+Linear:	x= -1.08 |	y= -16.25 |	z= 11.20
+time : 7560 Calibration: Sys=0 Gyro=0 Accel=1 Mag=0
+Gyro:	x= 2.57 |	y= 4.03 |	z= 2.58
+Linear:	x= 1.46 |	y= -9.47 |	z= 13.04
+time : 7577 Calibration: Sys=0 Gyro=0 Accel=1 Mag=0
+Gyro:	x= 2.77 |	y= 4.38 |	z= 2.26
+Linear:	x= 6.50 |	y= 10.08 |	z= 19.62
+time : 7596 Calibration: Sys=0 Gyro=0 Accel=1 Mag=0
+Gyro:	x= -0.01 |	y= 6.29 |	z= 2.25
+Linear:	x= 8.05 |	y= -11.64 |	z= 6.28
+time : 7612 Calibration: Sys=0 Gyro=0 Accel=1 Mag=0
+Gyro:	x= 0.77 |	y= 6.71 |	z= 2.93
+Linear:	x= 10.10 |	y= -10.39 |	z= 6.20
+time : 7629 Calibration: Sys=0 Gyro=0 Accel=1 Mag=0
+Gyro:	x= 2.01 |	y= 7.25 |	z= 2.55
+Linear:	x= 9.16 |	y= -11.73 |	z= 4.18
+time : 7648 Calibration: Sys=0 Gyro=0 Accel=1 Mag=0
+Gyro:	x= 1.45 |	y= 4.75 |	z= 0.63
+Linear:	x= 8.09 |	y= -11.50 |	z= 11.65
+time : 7664 Calibration: Sys=0 Gyro=0 Accel=1 Mag=0
+Gyro:	x= 0.53 |	y= 2.78 |	z= -0.88
+Linear:	x= 10.25 |	y= -9.32 |	z= 12.02
+time : 7682 Calibration: Sys=0 Gyro=0 Accel=1 Mag=0
+Gyro:	x= 0.16 |	y= 1.71 |	z= -1.44
+Linear:	x= 11.07 |	y= -7.22 |	z= 9.79
+time : 7700 Calibration: Sys=0 Gyro=0 Accel=1 Mag=0
+Gyro:	x= -0.29 |	y= -0.10 |	z= -2.29
+Linear:	x= 11.91 |	y= -5.58 |	z= 6.75
+time : 7717 Calibration: Sys=0 Gyro=0 Accel=1 Mag=0
+Gyro:	x= -0.12 |	y= -1.22 |	z= -2.65
+Linear:	x= 11.99 |	y= -2.47 |	z= 5.14
+time : 7736 Calibration: Sys=0 Gyro=0 Accel=1 Mag=0
+Gyro:	x= -0.01 |	y= -2.06 |	z= -2.51
+Linear:	x= 11.01 |	y= 1.17 |	z= 4.11
+time : 7755 Calibration: Sys=0 Gyro=0 Accel=1 Mag=0
+Gyro:	x= -0.23 |	y= -2.86 |	z= -2.02
+Linear:	x= 10.09 |	y= 2.94 |	z= 3.46
+time : 7772 Calibration: Sys=0 Gyro=0 Accel=1 Mag=0
+Gyro:	x= -0.42 |	y= -3.18 |	z= -1.70
+Linear:	x= 7.83 |	y= 3.02 |	z= 4.20
+time : 7790 Calibration: Sys=0 Gyro=0 Accel=1 Mag=0
+Gyro:	x= -0.83 |	y= -3.72 |	z= -1.07
+Linear:	x= 8.00 |	y= 2.89 |	z= 4.74
+time : 7809 Calibration: Sys=0 Gyro=0 Accel=1 Mag=0
+Gyro:	x= -1.15 |	y= -4.25 |	z= -0.59
+Linear:	x= 5.37 |	y= 1.85 |	z= 6.19
+time : 7826 Calibration: Sys=0 Gyro=0 Accel=1 Mag=0
+Gyro:	x= -1.36 |	y= -4.93 |	z= -0.43
+Linear:	x= 4.12 |	y= -0.73 |	z= 7.21
+time : 7845 Calibration: Sys=0 Gyro=0 Accel=1 Mag=0
+Gyro:	x= -1.17 |	y= -5.46 |	z= -0.59
+Linear:	x= 1.78 |	y= -1.64 |	z= 7.41
+time : 7861 Calibration: Sys=0 Gyro=0 Accel=1 Mag=0
+Gyro:	x= -1.03 |	y= -5.66 |	z= -0.74
+Linear:	x= 0.85 |	y= -1.39 |	z= 7.41
+time : 7878 Calibration: Sys=0 Gyro=0 Accel=1 Mag=0
+Gyro:	x= -1.02 |	y= -5.87 |	z= -0.91
+Linear:	x= -1.99 |	y= 0.38 |	z= 8.41
+time : 7897 Calibration: Sys=0 Gyro=0 Accel=1 Mag=0
+Gyro:	x= -1.62 |	y= -5.96 |	z= -0.83
+Linear:	x= -4.05 |	y= 0.86 |	z= 8.82
+time : 7913 Calibration: Sys=0 Gyro=0 Accel=1 Mag=0
+Gyro:	x= -1.98 |	y= -5.94 |	z= -0.73
+Linear:	x= -7.28 |	y= -0.85 |	z= 8.42
+time : 7930 Calibration: Sys=0 Gyro=0 Accel=1 Mag=0
+Gyro:	x= -2.39 |	y= -5.59 |	z= -0.55
+Linear:	x= -8.60 |	y= -1.76 |	z= 8.62
+time : 7949 Calibration: Sys=0 Gyro=0 Accel=1 Mag=0
+Gyro:	x= -2.43 |	y= -4.78 |	z= -0.62
+Linear:	x= -13.92 |	y= -2.86 |	z= 11.55
+time : 7966 Calibration: Sys=0 Gyro=0 Accel=1 Mag=0
+Gyro:	x= -2.66 |	y= -4.44 |	z= -1.43
+Linear:	x= -24.90 |	y= -2.15 |	z= 15.16
+time : 7984 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= -1.96 |	y= -5.11 |	z= -2.55
+Linear:	x= -26.51 |	y= 0.88 |	z= 3.78
+time : 8002 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= -1.04 |	y= -5.10 |	z= -2.95
+Linear:	x= -26.20 |	y= 1.99 |	z= -1.25
+time : 8019 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= 1.10 |	y= -4.26 |	z= -3.28
+Linear:	x= -25.78 |	y= 6.23 |	z= -11.01
+time : 8038 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= 1.83 |	y= -2.88 |	z= -1.82
+Linear:	x= -34.31 |	y= 17.33 |	z= -15.95
+time : 8058 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= -0.46 |	y= -1.27 |	z= 0.19
+Linear:	x= -25.30 |	y= 16.35 |	z= -18.02
+time : 8074 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= -1.15 |	y= 1.51 |	z= 1.19
+Linear:	x= 7.37 |	y= -13.51 |	z= -6.85
+time : 8093 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= 1.57 |	y= 3.33 |	z= 1.31
+Linear:	x= 12.79 |	y= -2.89 |	z= 0.81
+time : 8111 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= 1.77 |	y= 3.77 |	z= 1.62
+Linear:	x= 7.39 |	y= 0.37 |	z= -4.94
+time : 8127 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= 0.32 |	y= 6.43 |	z= 1.12
+Linear:	x= -13.48 |	y= 3.92 |	z= 1.77
+time : 8146 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= -0.37 |	y= 4.98 |	z= 1.02
+Linear:	x= -6.25 |	y= 7.43 |	z= 10.45
+time : 8163 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= -0.67 |	y= 4.64 |	z= 1.60
+Linear:	x= -7.61 |	y= 6.28 |	z= 3.48
+time : 8179 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= 0.51 |	y= 4.28 |	z= 0.96
+Linear:	x= -20.45 |	y= -14.81 |	z= -0.25
+time : 8198 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= 1.87 |	y= 1.65 |	z= -0.19
+Linear:	x= -2.43 |	y= 5.99 |	z= 5.76
+time : 8215 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= 1.63 |	y= 0.84 |	z= 0.11
+Linear:	x= -3.87 |	y= 1.65 |	z= 3.48
+time : 8233 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= 1.53 |	y= 0.61 |	z= -0.01
+Linear:	x= -3.18 |	y= 4.30 |	z= 4.14
+time : 8251 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= 0.42 |	y= -0.15 |	z= -0.07
+Linear:	x= 0.15 |	y= -0.41 |	z= 0.60
+time : 8267 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= 0.15 |	y= -0.13 |	z= -0.10
+Linear:	x= -0.71 |	y= 1.38 |	z= 1.14
+time : 8287 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= -0.11 |	y= -0.19 |	z= -0.10
+Linear:	x= -0.21 |	y= 0.50 |	z= 0.85
+time : 8306 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= -0.25 |	y= -0.25 |	z= -0.10
+Linear:	x= 0.00 |	y= 0.28 |	z= 0.28
+time : 8323 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= -0.27 |	y= -0.27 |	z= -0.08
+Linear:	x= 0.55 |	y= -0.82 |	z= -0.85
+time : 8341 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= -0.07 |	y= -0.15 |	z= -0.04
+Linear:	x= 0.07 |	y= -0.77 |	z= -0.90
+time : 8360 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= 0.20 |	y= -0.08 |	z= 0.01
+Linear:	x= 0.65 |	y= -0.87 |	z= -1.23
+time : 8376 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= 0.48 |	y= 0.07 |	z= -0.00
+Linear:	x= 0.25 |	y= 0.07 |	z= -0.37
+time : 8396 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= 0.37 |	y= 0.07 |	z= 0.03
+Linear:	x= -0.40 |	y= 0.26 |	z= 0.31
+time : 8412 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= 0.28 |	y= 0.01 |	z= 0.03
+Linear:	x= -0.14 |	y= -0.09 |	z= -0.15
+time : 8428 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= 0.25 |	y= 0.03 |	z= 0.04
+Linear:	x= -0.27 |	y= -0.10 |	z= -0.25
+time : 8448 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= 0.23 |	y= 0.03 |	z= 0.04
+Linear:	x= -0.48 |	y= 0.76 |	z= 0.37
+time : 8464 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= 0.16 |	y= -0.01 |	z= 0.03
+Linear:	x= 0.19 |	y= 0.14 |	z= -0.32
+time : 8481 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= 0.13 |	y= -0.02 |	z= 0.02
+Linear:	x= -0.17 |	y= -0.41 |	z= 0.05
+time : 8500 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= 0.16 |	y= -0.02 |	z= 0.05
+Linear:	x= 0.07 |	y= 0.01 |	z= 0.07
+time : 8516 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= 0.14 |	y= -0.01 |	z= 0.09
+Linear:	x= 0.23 |	y= -0.04 |	z= -0.28
+time : 8534 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= 0.16 |	y= 0.04 |	z= 0.12
+Linear:	x= 0.26 |	y= -0.05 |	z= -0.23
+time : 8552 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= 0.15 |	y= 0.08 |	z= 0.14
+Linear:	x= 0.33 |	y= -0.05 |	z= -0.31
+time : 8568 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= 0.19 |	y= 0.16 |	z= 0.17
+Linear:	x= 0.36 |	y= -0.06 |	z= -0.44
+time : 8588 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= 0.24 |	y= 0.25 |	z= 0.21
+Linear:	x= 0.28 |	y= -0.34 |	z= -0.16
+time : 8608 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= 0.32 |	y= 0.37 |	z= 0.25
+Linear:	x= -0.30 |	y= -0.50 |	z= -0.05
+time : 8624 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= 0.35 |	y= 0.55 |	z= 0.31
+Linear:	x= -0.07 |	y= 1.05 |	z= 0.78
+time : 8642 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= 0.29 |	y= 0.60 |	z= 0.32
+Linear:	x= 0.26 |	y= 0.10 |	z= 0.28
+time : 8660 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= 0.19 |	y= 0.69 |	z= 0.31
+Linear:	x= 1.32 |	y= 1.18 |	z= 0.95
+time : 8677 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= 0.01 |	y= 1.06 |	z= 0.33
+Linear:	x= 0.56 |	y= 0.55 |	z= 0.81
+time : 8696 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= -0.15 |	y= 1.43 |	z= 0.32
+Linear:	x= 1.63 |	y= 0.07 |	z= 1.27
+time : 8712 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= -0.18 |	y= 1.70 |	z= 0.34
+Linear:	x= 1.14 |	y= -0.62 |	z= 1.05
+time : 8729 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= 0.18 |	y= 2.66 |	z= 0.68
+Linear:	x= 4.35 |	y= -0.05 |	z= 1.81
+time : 8748 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= 0.25 |	y= 4.41 |	z= 1.12
+Linear:	x= 6.05 |	y= -1.95 |	z= 5.01
+time : 8764 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= 0.44 |	y= 5.38 |	z= 1.28
+Linear:	x= 2.60 |	y= -7.49 |	z= 18.97
+time : 8781 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= 2.56 |	y= 3.51 |	z= 2.42
+Linear:	x= 3.34 |	y= -9.88 |	z= 13.91
+time : 8800 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= 2.11 |	y= 4.51 |	z= 1.89
+Linear:	x= -0.77 |	y= 3.50 |	z= 23.13
+time : 8816 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= -0.04 |	y= 7.44 |	z= 1.72
+Linear:	x= 7.93 |	y= -3.65 |	z= 12.37
+time : 8835 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= -1.62 |	y= 9.81 |	z= 2.37
+Linear:	x= 11.89 |	y= -9.10 |	z= 9.75
+time : 8854 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= -0.72 |	y= 10.35 |	z= 2.91
+Linear:	x= 19.84 |	y= -10.35 |	z= 0.61
+time : 8870 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= 0.39 |	y= 10.61 |	z= 3.14
+Linear:	x= -16.80 |	y= -14.56 |	z= 9.32
+time : 8889 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= 0.99 |	y= 1.13 |	z= 0.11
+Linear:	x= 14.12 |	y= -12.13 |	z= 21.79
+time : 8909 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= 1.20 |	y= -0.87 |	z= -1.23
+Linear:	x= 14.51 |	y= -6.31 |	z= 10.14
+time : 8925 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= 1.28 |	y= -2.12 |	z= -1.71
+Linear:	x= 14.11 |	y= -2.89 |	z= 5.42
+time : 8944 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= 0.79 |	y= -2.75 |	z= -1.63
+Linear:	x= 13.19 |	y= -0.02 |	z= 2.53
+time : 8961 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= 0.44 |	y= -2.95 |	z= -1.51
+Linear:	x= 12.32 |	y= 0.35 |	z= 2.06
+time : 8978 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= -0.09 |	y= -3.32 |	z= -0.89
+Linear:	x= 10.52 |	y= 0.30 |	z= 2.81
+time : 8997 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= -0.71 |	y= -3.75 |	z= -0.55
+Linear:	x= 8.37 |	y= -0.41 |	z= 4.10
+time : 9013 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= -0.96 |	y= -4.07 |	z= -0.46
+Linear:	x= 7.44 |	y= -1.15 |	z= 4.65
+time : 9030 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= -1.13 |	y= -4.78 |	z= -0.48
+Linear:	x= 5.20 |	y= -3.20 |	z= 5.63
+time : 9049 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= -0.92 |	y= -5.38 |	z= -0.71
+Linear:	x= 3.68 |	y= -3.61 |	z= 5.63
+time : 9065 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= -0.87 |	y= -5.82 |	z= -1.06
+Linear:	x= 2.29 |	y= -2.99 |	z= 6.37
+time : 9083 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= -1.02 |	y= -5.94 |	z= -1.19
+Linear:	x= -0.63 |	y= -2.82 |	z= 7.26
+time : 9102 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= -1.38 |	y= -6.10 |	z= -1.38
+Linear:	x= -2.01 |	y= -2.72 |	z= 7.97
+time : 9118 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= -1.73 |	y= -6.11 |	z= -1.41
+Linear:	x= -4.71 |	y= -2.24 |	z= 9.43
+time : 9138 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= -2.24 |	y= -6.06 |	z= -1.35
+Linear:	x= -8.66 |	y= -1.10 |	z= 11.47
+time : 9157 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= -3.04 |	y= -5.82 |	z= -1.24
+Linear:	x= -12.91 |	y= -1.06 |	z= 13.10
+time : 9173 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= -3.32 |	y= -5.64 |	z= -1.28
+Linear:	x= -20.80 |	y= -2.09 |	z= 15.17
+time : 9192 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= -3.24 |	y= -5.47 |	z= -1.92
+Linear:	x= -28.91 |	y= -0.33 |	z= 10.30
+time : 9211 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= -2.08 |	y= -5.45 |	z= -2.84
+Linear:	x= -29.92 |	y= 0.04 |	z= 6.41
+time : 9227 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= 0.27 |	y= -4.90 |	z= -3.45
+Linear:	x= -34.22 |	y= 0.64 |	z= -3.27
+time : 9246 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= 1.64 |	y= -3.53 |	z= -2.54
+Linear:	x= -29.68 |	y= 14.03 |	z= -12.04
+time : 9263 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= 1.11 |	y= -2.54 |	z= -1.41
+Linear:	x= -38.59 |	y= 18.34 |	z= -14.93
+time : 9279 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= -1.83 |	y= -0.89 |	z= 0.77
+Linear:	x= -25.50 |	y= 11.85 |	z= -17.30
+time : 9298 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= -1.65 |	y= 1.82 |	z= 1.56
+Linear:	x= -16.65 |	y= -5.21 |	z= -8.72
+time : 9315 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= 2.29 |	y= 3.41 |	z= 1.20
+Linear:	x= 0.93 |	y= 5.13 |	z= 2.29
+time : 9332 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= 2.87 |	y= 3.42 |	z= 0.66
+Linear:	x= 6.46 |	y= 13.08 |	z= -11.93
+time : 9351 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= 0.46 |	y= 6.74 |	z= 0.34
+Linear:	x= -7.86 |	y= 16.38 |	z= 3.47
+time : 9367 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= -0.62 |	y= 6.31 |	z= 1.46
+Linear:	x= -12.89 |	y= 10.08 |	z= 17.03
+time : 9386 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= 0.34 |	y= 4.84 |	z= 1.67
+Linear:	x= -35.38 |	y= -33.61 |	z= 11.19
+time : 9405 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= 2.64 |	y= 1.21 |	z= -0.00
+Linear:	x= 6.95 |	y= 15.51 |	z= 6.34
+time : 9421 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= 2.04 |	y= 1.44 |	z= 0.02
+Linear:	x= -4.95 |	y= -3.42 |	z= 2.14
+time : 9440 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= 1.47 |	y= 0.50 |	z= 0.09
+Linear:	x= -5.44 |	y= 7.99 |	z= 5.25
+time : 9460 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= 0.46 |	y= -0.18 |	z= 0.01
+Linear:	x= -0.77 |	y= 1.08 |	z= 1.65
+time : 9476 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= 0.18 |	y= -0.14 |	z= -0.08
+Linear:	x= -0.44 |	y= 0.38 |	z= 0.70
+time : 9494 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= -0.02 |	y= -0.11 |	z= -0.13
+Linear:	x= -0.06 |	y= 0.82 |	z= 0.47
+time : 9512 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= -0.10 |	y= -0.09 |	z= -0.15
+Linear:	x= -0.29 |	y= 0.23 |	z= 0.22
+time : 9528 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= -0.10 |	y= -0.14 |	z= -0.15
+Linear:	x= -0.21 |	y= -0.10 |	z= -0.72
+time : 9548 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= -0.03 |	y= -0.13 |	z= -0.10
+Linear:	x= 0.81 |	y= 0.30 |	z= -1.29
+time : 9564 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= 0.02 |	y= -0.08 |	z= -0.07
+Linear:	x= 0.21 |	y= -1.40 |	z= -0.65
+time : 9580 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= 0.14 |	y= 0.08 |	z= -0.01
+Linear:	x= -0.04 |	y= 0.76 |	z= -0.25
+time : 9600 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= 0.16 |	y= 0.09 |	z= 0.01
+Linear:	x= -0.37 |	y= 0.33 |	z= -0.11
+time : 9616 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= 0.16 |	y= 0.02 |	z= 0.03
+Linear:	x= 0.06 |	y= -0.35 |	z= -0.34
+time : 9634 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= 0.19 |	y= 0.04 |	z= 0.09
+Linear:	x= -0.83 |	y= 0.30 |	z= -0.22
+time : 9653 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= 0.15 |	y= -0.04 |	z= 0.09
+Linear:	x= 0.21 |	y= 0.12 |	z= -0.13
+time : 9669 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= 0.16 |	y= 0.02 |	z= 0.08
+Linear:	x= -0.06 |	y= 0.36 |	z= -0.06
+time : 9689 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= 0.14 |	y= 0.06 |	z= 0.09
+Linear:	x= 0.25 |	y= 0.32 |	z= -0.30
+time : 9708 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= 0.18 |	y= 0.14 |	z= 0.14
+Linear:	x= 0.92 |	y= 0.05 |	z= -0.34
+time : 9724 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= 0.26 |	y= 0.26 |	z= 0.21
+Linear:	x= -0.47 |	y= 0.00 |	z= 0.04
+time : 9743 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= 0.24 |	y= 0.22 |	z= 0.21
+Linear:	x= 0.57 |	y= 0.11 |	z= 0.00
+time : 9761 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= 0.24 |	y= 0.21 |	z= 0.21
+Linear:	x= -0.09 |	y= -0.25 |	z= -0.17
+time : 9777 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= 0.30 |	y= 0.30 |	z= 0.27
+Linear:	x= 0.88 |	y= 0.26 |	z= 0.34
+time : 9797 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= 0.34 |	y= 0.50 |	z= 0.38
+Linear:	x= 0.53 |	y= -0.05 |	z= 0.45
+time : 9813 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= 0.31 |	y= 0.60 |	z= 0.45
+Linear:	x= 0.28 |	y= -0.80 |	z= 0.56
+time : 9829 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= 0.19 |	y= 0.75 |	z= 0.52
+Linear:	x= 1.08 |	y= 1.55 |	z= 0.81
+time : 9849 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= -0.08 |	y= 1.04 |	z= 0.31
+Linear:	x= 0.23 |	y= 1.46 |	z= 1.16
+time : 9865 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= -0.22 |	y= 1.44 |	z= 0.12
+Linear:	x= -0.04 |	y= 0.25 |	z= 0.93
+time : 9883 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= -0.18 |	y= 1.62 |	z= 0.10
+Linear:	x= 3.23 |	y= -0.75 |	z= 0.64
+time : 9901 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= 0.15 |	y= 2.37 |	z= 0.38
+Linear:	x= 8.43 |	y= 0.18 |	z= 2.27
+time : 9917 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= 0.44 |	y= 3.95 |	z= 1.02
+Linear:	x= 4.26 |	y= -0.90 |	z= 3.58
+time : 9937 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= 0.59 |	y= 4.63 |	z= 1.31
+Linear:	x= 6.20 |	y= -12.52 |	z= 13.86
+time : 9956 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= 2.37 |	y= 3.78 |	z= 2.41
+Linear:	x= 3.68 |	y= -5.50 |	z= 13.75
+time : 9972 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= 1.78 |	y= 4.47 |	z= 2.35
+Linear:	x= 2.86 |	y= 1.46 |	z= 31.24
+time : 9991 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= 0.18 |	y= 6.74 |	z= 2.10
+Linear:	x= 8.84 |	y= -3.50 |	z= 19.21
+time : 10010 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= -0.80 |	y= 8.99 |	z= 2.65
+Linear:	x= 14.68 |	y= -12.62 |	z= 12.89
+time : 10027 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= 1.73 |	y= 9.45 |	z= 3.19
+Linear:	x= 15.94 |	y= -11.56 |	z= 9.08
+time : 10046 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= 0.76 |	y= 5.47 |	z= 0.83
+Linear:	x= 18.67 |	y= -12.71 |	z= 23.51
+time : 10062 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= 0.59 |	y= 3.45 |	z= 0.02
+Linear:	x= 5.08 |	y= -11.26 |	z= 13.74
+time : 10079 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= 0.07 |	y= -0.82 |	z= -1.50
+Linear:	x= 14.50 |	y= -7.70 |	z= 8.85
+time : 10098 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= 0.18 |	y= -2.14 |	z= -2.02
+Linear:	x= 15.26 |	y= -4.07 |	z= 4.76
+time : 10115 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= 0.30 |	y= -2.40 |	z= -2.00
+Linear:	x= 14.05 |	y= -0.25 |	z= 2.73
+time : 10132 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= 0.14 |	y= -2.78 |	z= -1.68
+Linear:	x= 13.16 |	y= 0.61 |	z= 2.89
+time : 10151 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= -0.43 |	y= -3.27 |	z= -1.24
+Linear:	x= 10.18 |	y= 0.86 |	z= 4.72
+time : 10167 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= -0.96 |	y= -3.95 |	z= -0.90
+Linear:	x= 8.19 |	y= -0.16 |	z= 5.89
+time : 10186 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= -1.17 |	y= -4.72 |	z= -0.80
+Linear:	x= 4.85 |	y= -2.59 |	z= 8.16
+time : 10204 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= -1.20 |	y= -5.15 |	z= -0.90
+Linear:	x= 3.16 |	y= -3.90 |	z= 8.20
+time : 10221 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= -0.83 |	y= -5.94 |	z= -1.40
+Linear:	x= 1.69 |	y= -4.20 |	z= 7.83
+time : 10240 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= -0.51 |	y= -6.47 |	z= -1.92
+Linear:	x= -0.35 |	y= -2.42 |	z= 6.63
+time : 10260 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= -0.75 |	y= -6.60 |	z= -2.03
+Linear:	x= -3.17 |	y= 0.21 |	z= 7.53
+time : 10276 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= -1.45 |	y= -6.46 |	z= -1.73
+Linear:	x= -5.61 |	y= 1.03 |	z= 9.13
+time : 10294 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= -2.26 |	y= -6.22 |	z= -1.28
+Linear:	x= -10.47 |	y= 0.65 |	z= 13.70
+time : 10312 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= -2.61 |	y= -6.12 |	z= -1.05
+Linear:	x= -12.97 |	y= -0.45 |	z= 14.89
+time : 10328 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= -2.79 |	y= -6.17 |	z= -1.03
+Linear:	x= -19.15 |	y= -1.47 |	z= 15.63
+time : 10348 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= -2.42 |	y= -6.11 |	z= -1.52
+Linear:	x= -26.45 |	y= 0.07 |	z= 12.66
+time : 10364 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= -1.97 |	y= -5.97 |	z= -1.83
+Linear:	x= -27.47 |	y= 1.22 |	z= 10.03
+time : 10380 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= -0.69 |	y= -5.23 |	z= -2.01
+Linear:	x= -31.04 |	y= 3.46 |	z= -3.09
+time : 10400 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= 0.81 |	y= -3.79 |	z= -1.76
+Linear:	x= -27.01 |	y= 6.77 |	z= -12.27
+time : 10416 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= 0.75 |	y= -2.04 |	z= -0.34
+Linear:	x= -35.17 |	y= 14.31 |	z= -12.25
+time : 10434 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= -1.06 |	y= -0.46 |	z= 0.55
+Linear:	x= -26.74 |	y= 9.08 |	z= -13.79
+time : 10453 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= -0.89 |	y= 0.81 |	z= 0.58
+Linear:	x= -21.61 |	y= 0.65 |	z= -7.90
+time : 10469 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= 2.63 |	y= 4.10 |	z= 0.90
+Linear:	x= 2.77 |	y= -1.64 |	z= 4.08
+time : 10489 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= 2.32 |	y= 4.99 |	z= 1.32
+Linear:	x= 4.92 |	y= 10.96 |	z= -6.17
+time : 10508 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= -0.38 |	y= 7.20 |	z= 0.99
+Linear:	x= -13.93 |	y= 7.76 |	z= 2.15
+time : 10525 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= -0.15 |	y= 5.80 |	z= 1.95
+Linear:	x= -13.53 |	y= 2.06 |	z= 8.64
+time : 10543 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= -0.51 |	y= 5.11 |	z= 1.85
+Linear:	x= -18.98 |	y= -30.62 |	z= 22.46
+time : 10561 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= 2.45 |	y= 2.90 |	z= 0.31
+Linear:	x= -2.61 |	y= 7.12 |	z= 6.06
+time : 10578 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= 2.06 |	y= 1.33 |	z= 0.10
+Linear:	x= -4.65 |	y= 2.70 |	z= 2.61
+time : 10597 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= 1.13 |	y= 0.46 |	z= 0.08
+Linear:	x= -3.68 |	y= 3.10 |	z= 5.47
+time : 10613 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= 0.57 |	y= -0.11 |	z= 0.03
+Linear:	x= -0.99 |	y= 0.46 |	z= 1.18
+time : 10630 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= 0.26 |	y= -0.05 |	z= -0.09
+Linear:	x= -0.80 |	y= 0.36 |	z= 0.91
+time : 10649 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= 0.07 |	y= -0.08 |	z= -0.11
+Linear:	x= -0.33 |	y= 0.40 |	z= 0.17
+time : 10665 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= -0.03 |	y= -0.06 |	z= -0.10
+Linear:	x= 0.29 |	y= 0.49 |	z= -0.03
+time : 10682 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= -0.08 |	y= -0.02 |	z= -0.08
+Linear:	x= -0.39 |	y= -0.19 |	z= -0.44
+time : 10701 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= -0.05 |	y= -0.02 |	z= -0.07
+Linear:	x= 0.57 |	y= -0.50 |	z= -0.43
+time : 10718 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= 0.02 |	y= 0.01 |	z= -0.02
+Linear:	x= 1.33 |	y= -0.32 |	z= -1.17
+time : 10737 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= 0.13 |	y= 0.16 |	z= 0.05
+Linear:	x= -0.65 |	y= 0.49 |	z= 0.40
+time : 10756 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= 0.12 |	y= 0.12 |	z= 0.04
+Linear:	x= 0.05 |	y= 0.30 |	z= 0.02
+time : 10772 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= 0.12 |	y= 0.13 |	z= 0.05
+Linear:	x= 0.38 |	y= -0.47 |	z= -0.61
+time : 10791 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= 0.13 |	y= 0.08 |	z= 0.10
+Linear:	x= -0.24 |	y= 0.20 |	z= -0.25
+time : 10810 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= 0.13 |	y= 0.05 |	z= 0.11
+Linear:	x= 0.02 |	y= 0.35 |	z= 0.02
+time : 10827 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= 0.10 |	y= 0.08 |	z= 0.09
+Linear:	x= 0.02 |	y= 0.14 |	z= -0.06
+time : 10846 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= 0.13 |	y= 0.16 |	z= 0.12
+Linear:	x= -0.59 |	y= -0.33 |	z= -0.11
+time : 10862 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= 0.14 |	y= 0.15 |	z= 0.13
+Linear:	x= 0.38 |	y= 0.26 |	z= -0.24
+time : 10879 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= 0.14 |	y= 0.12 |	z= 0.17
+Linear:	x= -0.10 |	y= -0.22 |	z= -0.23
+time : 10898 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= 0.15 |	y= 0.08 |	z= 0.17
+Linear:	x= 0.33 |	y= 0.11 |	z= 0.01
+time : 10914 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= 0.17 |	y= 0.11 |	z= 0.17
+Linear:	x= -0.42 |	y= -0.07 |	z= -0.20
+time : 10931 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= 0.24 |	y= 0.17 |	z= 0.21
+Linear:	x= 0.44 |	y= 0.05 |	z= 0.07
+time : 10950 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= 0.26 |	y= 0.26 |	z= 0.25
+Linear:	x= -0.16 |	y= 0.34 |	z= 0.16
+time : 10966 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= 0.24 |	y= 0.38 |	z= 0.33
+Linear:	x= 0.15 |	y= -0.66 |	z= 0.18
+time : 10985 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= 0.20 |	y= 0.52 |	z= 0.41
+Linear:	x= 1.02 |	y= 0.82 |	z= 0.50
+time : 11003 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= 0.12 |	y= 0.69 |	z= 0.38
+Linear:	x= 0.84 |	y= 0.87 |	z= 0.65
+time : 11020 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= -0.07 |	y= 0.96 |	z= 0.20
+Linear:	x= 0.59 |	y= 0.91 |	z= 0.84
+time : 11039 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1
+Gyro:	x= -0.16 |	y= 1.32 |	z= 0.17
+Linear:	x= 0.55 |	y= -0.06 |	z= 1.17
+time : 11059 Calibration: Sys=0 Gyro=0 Accel=1 Mag=1

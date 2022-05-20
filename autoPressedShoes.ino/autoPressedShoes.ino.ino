@@ -5,27 +5,63 @@
 #include <Adafruit_BNO055.h>
 #include <utility/imumaths.h>
 
+//차압센서 함수
 void DataFetch_ISEN_P10K(void);
 void RawToDecimal_ISEN_P10k(void);
 void Calculate_ISEN_P10k(void);
 
-  /* Board layout:
-         +----------+
-         |         *| RST   PITCH  ROLL  HEADING
-     ADR |*        *| SCL
-     INT |*        *| SDA     ^            /->
-     PS1 |*        *| GND     |            |
-     PS0 |*        *| 3VO     Y    Z-->    \-X
-         |         *| VIN
-         +----------+
-  */
-
+/* Board layout:
+       +----------+
+       |         *| RST   PITCH  ROLL  HEADING
+   ADR |*        *| SCL
+   INT |*        *| SDA     ^            /->
+   PS1 |*        *| GND     |            |
+   PS0 |*        *| 3VO     Y    Z-->    \-X
+       |         *| VIN
+       +----------+
+*/
+//차압센서 변수
 unsigned long press_decimal,temp_decimal;
 float pressure,temperature;
 unsigned char dat[4];
 
+//BNO55 센서
+Adafruit_BNO055 bno = Adafruit_BNO055(55, 0x28);
+
+void readStep(){
+  sensors_event_t angVelocityData , linearAccelData;
+  bno.getEvent(&angVelocityData, Adafruit_BNO055::VECTOR_GYROSCOPE);
+  bno.getEvent(&linearAccelData, Adafruit_BNO055::VECTOR_LINEARACCEL);
+/*
+ * sensors_event_t* event
+    x = event->gyro.x;
+    y = event->gyro.y;
+    z = event->gyro.z;
+ * 
+    x = event->acceleration.x;
+    y = event->acceleration.y;
+    z = event->acceleration.z;
+ * 
+ */
+
+  if(1){
+  //압력센서 ON
+    
+
+  
+  }else{
+  //압력센서 OFF
+
+
+    
+  }
+}
+
+//루프마다 모터 함수
 void motorWork(){
   if(target_pressure-current_pressure!=0 && target_pressure!=0){
+
+    //모터의 방향 설정
     if(target_pressure-current_pressure>0){
       digitalWrite(MOTOR_DIR,HIGH);
       Serial.print(" motor HIGH ");
@@ -35,37 +71,34 @@ void motorWork(){
       Serial.print(" motor HIGH ");
       Serial.println(" m0");
     }
+
+    //모터가 반대방향으로 변경하는 것 방지
+    if(motor_current_degree < 10 && target_pressure-current_pressure<=0){
+      float motorspeed=0;
+      analogWrite(MOTOR_PWM,motorspeed);
+      return;
+    }   
+
+    //모터 PID코드
+    float motorspeed =  pControl + iControl + dControl;
+    
+    analogWrite(MOTOR_PWM,motorspeed);
+
+    //디버그 모드 프린트
     Serial.print("pressure : ");
     Serial.print(target_pressure);
     Serial.print(" ");
     Serial.print(current_pressure);
     Serial.print(" ");
     Serial.print(motor_current_degree);
-    Serial.println(" ");  
-
-    if(motor_current_degree < 10 && target_pressure-current_pressure<=0){
-      float motorspeed=0;
-      Serial.print("motorspeed : ");
-      Serial.print(motorspeed);
-      Serial.println(" ");
-
-      analogWrite(MOTOR_PWM,motorspeed);
-      return;
-    }   
-
-    float motorspeed =  pControl + iControl + dControl;
-
-      /*
-    if(motor_current_degree>60 && (target_pressure - current_pressure)>0){
-      float motorspeed_gain= 2 * (motor_current_degree-60);
-      motorspeed= motorspeed+motorspeed_gain;
-    }*/
+    Serial.println(" "); 
     Serial.print("motorspeed : ");
     Serial.print(motorspeed);
     Serial.println(" ");
-    analogWrite(MOTOR_PWM,motorspeed);
   }
 }
+
+//셋업 함수
 void setup() {
   // put your setup code here, to run once:
   Wire.begin(); // I2C 초기화(Master Mode)
@@ -80,12 +113,12 @@ void setup() {
   attachInterrupt(digitalPinToInterrupt(MOTOR_ENCODER_B), doEncoderB, CHANGE);
   Serial.println("startup the autoPressing");
 
-  if (!bno.begin())
-  {
+  if (!bno.begin()){
     /* There was a problem detecting the BNO055 ... check your connections */
     Serial.println("Ooops, no BNO055 detected ... Check your wiring or I2C ADDR!");
   }
-  
+
+  //최저압 측정
   Serial.println("checking lowPressure");
   delay(1000);
   lowPressure=0;
@@ -99,6 +132,8 @@ void setup() {
   lowPressure=lowPressure/10;
   Serial.print("lowPressure ");
   Serial.println(lowPressure);
+
+  //최고압 측정
   Serial.println("checking highPressure");
   digitalWrite(MOTOR_DIR,HIGH);
   float motorspeed = 200; 
@@ -118,6 +153,8 @@ void setup() {
   }
   Serial.print("highPressure ");
   Serial.println(highPressure);
+
+  //다시 최저압으로 변경
   Serial.println("checking complete");
   tmp=0;
   target_pressure=lowPressure;
@@ -137,8 +174,12 @@ void setup() {
   
   Serial.println("start autopressing");
 }
+
+//압력센서 값을 받아 걸음걸이 분석 함수
 void checkingPressureSensor(int val){
-  if(val>=SENSOR_CRITICAL_VALUE){
+  
+  if(val>=SENSOR_CRITICAL_VALUE){//압력센서가 일정한 값 이상일때 작동
+    
     if(preMillis!=0){
       unsigned long millidelay = millis()-preMillis;
       if(millidelay>10000){
@@ -158,7 +199,6 @@ void checkingPressureSensor(int val){
 //루프 함수 ///////////////////////////////////////////////////////////////////////////////////////////
 void loop() {
   unsigned long mfirst = millis();
-
 /*
   sensors_event_t orientationData , angVelocityData , linearAccelData, magnetometerData, accelerometerData, gravityData;
   bno.getEvent(&orientationData, Adafruit_BNO055::VECTOR_EULER);
@@ -196,13 +236,15 @@ void loop() {
     if((100.0-percentage)>80){
       //조여주기
       target_pressure=highPressure;
-      Serial.println("target_pressure=3150;");
+      Serial.println("target_pressure is highPressure");
     }else if((100.0-percentage)>=20){
       //풀어주기
       target_pressure=lowPressure;
-      Serial.println("target_pressure=2970;");
+      Serial.println("target_pressure is lowPressure");
     }
   }
+
+  //현재 압력값 받아오기
   int val = 1023- analogRead(A0);
   Serial.print(" Sensor : ");
   Serial.println(val);
@@ -212,19 +254,35 @@ void loop() {
     sensorDelay--;
     if(sensorDelay<0) sensorDelay=0;
   }
+
+  //모터 함수
   motorWork();
+
+  //현재 압력값 받아오기
   DataFetch_ISEN_P10K();
   RawToDecimal_ISEN_P10k();
   Calculate_ISEN_P10k();
-  
   current_pressure=press_decimal;
-  
+
+  //PID 값 알아내기 위한 코드  
   errorGap = target_pressure - current_pressure - realError; 
   realError = target_pressure - current_pressure;
   accError = accError + realError;
+
   pControl = mP * realError;
   iControl = mI * (accError * LOOP_DELAY);
   dControl = mD * (errorGap / LOOP_DELAY);  
+
+/*
+  sensors_event_t orientationData , angVelocityData , linearAccelData, magnetometerData, accelerometerData, gravityData;
+  bno.getEvent(&orientationData, Adafruit_BNO055::VECTOR_EULER);
+  bno.getEvent(&angVelocityData, Adafruit_BNO055::VECTOR_GYROSCOPE);
+  bno.getEvent(&linearAccelData, Adafruit_BNO055::VECTOR_LINEARACCEL);
+  bno.getEvent(&magnetometerData, Adafruit_BNO055::VECTOR_MAGNETOMETER);
+  bno.getEvent(&accelerometerData, Adafruit_BNO055::VECTOR_ACCELEROMETER);
+  bno.getEvent(&gravityData, Adafruit_BNO055::VECTOR_GRAVITY);
+*/
+  
   unsigned long msecond= millis();
   unsigned long code_time = msecond-mfirst;
   delay(LOOP_DELAY-code_time);
@@ -297,7 +355,7 @@ void DataFetch_ISEN_P10K(void){
   * 2. Write MR -> slave address 0x28 + I2C write command bit를 적용햐여 Wake up
   * --> 압력 값만 Update 되고 온도 값은 이전 값을 유지함.
   * 압력센서 Application 에 따라 Wake up 명령을 적절해 사용할 필요 있음.
-  ****************************************************************************/
+  ****************************************************************************/ 
   Wire.write(P10K_i2c_address+0x01); // I2C Read_MR
   //Wire.write(P10K_i2c_address); // I2C Write_MR
   Wire.endTransmission();
