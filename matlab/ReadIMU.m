@@ -23,6 +23,8 @@ for i= 1:n
     etc(i,5)=temp(5);
 end
 
-figure(5),plot(etc(:,1),Gyro(:,3) );
+etc(:,1)=etc(:,1)-etc(1,1);
+figure(5),plot(etc(:,1),[Linear(:,1),Linear(:,3),Gyro(:,2)] );
+title('x축 선형가속도(파란색) + z축 선형가속도(빨간색) + y축 각속도(노란색)');
 
 
