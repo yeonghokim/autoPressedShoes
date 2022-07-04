@@ -1,5 +1,5 @@
-
-fileID = fopen('mester_answer_Ex1.txt','r');
+function data = ReadDataFunction(text)
+fileID = fopen(text,'r');
 A=zeros(5);
 B=1;
 C=1;
@@ -42,14 +42,10 @@ for i = 116:2348
     formatSpec = '%f';
     B(i) = fscanf(fileID,formatSpec);
 end
-% A(1) 압력센서 값
-% A(2) motor LOW(76) HIGH(72)
-% A(3) target pressure
-% A(4) current pressure
-% A(5) motor current degree
-% B motor speed
-% C target pressure
 
-figure(5),plot(A(100:200,5));
+data = {A, B, C};
+
+
+end
 
 

@@ -6,7 +6,6 @@ int motor_current_degree=0;
 
 #define MOTOR_ENCODER_POS_PER_ROUND 2500.0 //(펄스) 최대 속도
 
-
 //엔코더 함수 ///////////////////////////////////////////////////////////////////////////////////////////
 void doEncoderA(){
   if(digitalRead(MOTOR_ENCODER_A)==digitalRead(MOTOR_ENCODER_B)) // 같으면

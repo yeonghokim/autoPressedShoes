@@ -1,5 +1,6 @@
-fileID = fopen('imu_test1.txt','r');
-n=490;%n=289;
+function data = ReadIMUFunction(text,n)
+fileID = fopen(text,'r');
+%n=490;n=289;
 Gyro=zeros(n,3);
 Linear=zeros(n,3);
 etc=zeros(n,5);
@@ -22,8 +23,7 @@ for i= 1:n
     etc(i,4)=temp(4);
     etc(i,5)=temp(5);
 end
-
-etc(:,1)=etc(:,1)-etc(1,1);
-figure(5),plot(etc(:,1),Gyro(:,2) );
+data  = {Gyro,Linear,etc};
+end
 
 

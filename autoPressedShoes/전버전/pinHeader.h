@@ -36,6 +36,8 @@ int motor_target_degree=0;
 boolean motor_on=true;
 int count = 0;
 boolean IsSwing=true;
+int swingCheck=0;
+int oldgyroY=0;
 
 int preValue=-1;
 unsigned long preMillis=0;
