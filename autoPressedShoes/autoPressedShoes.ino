@@ -25,7 +25,7 @@ void readStep() {
     bno.getEvent(&angVelocityData, Adafruit_BNO055::VECTOR_GYROSCOPE);
     bno.getEvent(&linearAccelData, Adafruit_BNO055::VECTOR_LINEARACCEL);
 
-    int y = angVelocityData.gyro.y;
+    float y = angVelocityData.gyro.y;
 
     float diff = (y - oldgyroY) / LOOP_DELAY;
 
@@ -43,8 +43,9 @@ void readStep() {
             target_pressure = lowPressure;
             Serial.println("target_pressure is lowPressure");
         }
-    }else if((y - oldgyroY)<0.05){
-        Serial.println("값이 변하지 않음.");
+    }else if((y - oldgyroY)<0.005){
+        Serial.print(y);
+        Serial.println(" : 값이 변하지 않음.");
     }
 
     if(swingCheck>0)
@@ -88,6 +89,17 @@ void motorWork() {
     }
 }
 
+
+void motorReset() {
+  Serial.print("motor Reset");
+  digitalWrite(MOTOR_DIR, LOW);
+  while(motor_current_degree > 10){ 
+    analogWrite(MOTOR_PWM, 100);
+    Serial.print("motor_current_degree : ");
+    Serial.println(motor_current_degree); 
+  }
+}
+
 //셋업 함수
 void setup() {
     Wire.begin(); // I2C 초기화(Master Mode)
@@ -108,7 +120,7 @@ void setup() {
     }
 
     if(DEVELOPMENT){
-        lowPressure = 1
+        lowPressure = 1;
         highPressure = 1;
 
     }else{
@@ -193,6 +205,18 @@ void checkingPressureSensor(int val) {
 void loop() {
     unsigned long mfirst = millis();
 
+    while (Serial.available() > 0) {
+      int type = Serial.parseInt();
+      Serial.println(type);
+      if(type==1){
+        motorReset();
+        while (true) {
+          delay(1000);
+          Serial.println("delaying");
+        }
+      }
+    }
+
     /*//현재 압력값 받아오기
     int val = 1023- analogRead(A0);
     Serial.print(" Sensor : ");
@@ -203,15 +227,16 @@ void loop() {
       sensorDelay--;
       if(sensorDelay<0) sensorDelay=0;
     }*/
+    
     readStep();
 
     //모터 함수
-    motorWork();
+    //motorWork();
 
     //현재 압력값 받아오기
-    DataFetch_ISEN_P10K();
-    RawToDecimal_ISEN_P10k();
-    Calculate_ISEN_P10k();
+    //DataFetch_ISEN_P10K();
+    //RawToDecimal_ISEN_P10k();
+    //Calculate_ISEN_P10k();
     current_pressure = press_decimal;
 
     //PID 값 알아내기 위한 코드
