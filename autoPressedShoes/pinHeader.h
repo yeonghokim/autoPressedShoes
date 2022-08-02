@@ -1,7 +1,7 @@
 
 #define P10K_i2c_address 0x28
 //핀번호 리스트
-#define MOTOR_DIR 11// 모터 DIR 핀번호
+#define MOTOR_DIR 9// 모터 DIR 핀번호
 #define MOTOR_PWM 10// 모터 PWM 핀번호
 
 //특별한 값 리스트

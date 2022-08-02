@@ -1,4 +1,4 @@
-#include <Wire.h>
+#include <Wire1.h>
 #include "pinHeader.h"
 #include "encoder.h"
 #include <Adafruit_Sensor.h>
@@ -247,7 +247,7 @@ void motorReset() {
 
 //셋업
 void setup() {
-    Wire.begin(); // I2C 초기화(Master Mode)
+    Wire1.begin(); // I2C 초기화(Master Mode)
     Serial.begin(115200); // UART 초기화 9600bps
 
     pinMode(13, OUTPUT);
@@ -467,14 +467,14 @@ void DataFetch_ISEN_P10K(void) {
     * --> 압력 값만 Update 되고 온도 값은 이전 값을 유지함.
     * 압력센서 Application 에 따라 Wake up 명령을 적절해 사용할 필요 있음.
     ****************************************************************************/
-    Wire.write(P10K_i2c_address + 0x01); // I2C Read_MR
-    //Wire.write(P10K_i2c_address); // I2C Write_MR
-    Wire.endTransmission();
+    Wire1.write(P10K_i2c_address + 0x01); // I2C Read_MR
+    //Wire1.write(P10K_i2c_address); // I2C Write_MR
+    Wire1.endTransmission();
     delay(10);
-    Wire.requestFrom(0x28, 4);
-    while (Wire.available()) {
+    Wire1.requestFrom(0x28, 4);
+    while (Wire1.available()) {
         if (i >= 4) i = 0;
-        dat[i] = Wire.read();
+        dat[i] = Wire1.read();
         i++;
     }
 }
