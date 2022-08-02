@@ -17,9 +17,142 @@ unsigned long press_decimal, temp_decimal;
 float pressure, temperature;
 unsigned char dat[4];
 
+float predictValue[1000];
+int CheckingStep = 0;
+int stepstart = 0;
+int step=0;
+
 //BNO55 센서
 Adafruit_BNO055 bno = Adafruit_BNO055(55, 0x28);
 
+void GetFunction(float s[],float H[],float L,int nsize){
+  /*
+    memset(predictValue,0,nsize);
+
+    float l[5];
+    l[0]= s[1];
+    l[1]= s[1]+s[2];
+    l[2]= s[1]+s[2]+s[3];
+    l[3]= s[1]+s[2]+s[3]+s[4];
+    l[4]= s[1]+s[2]+s[3]+s[4]+s[5];
+
+    float taw = l[5];
+    float w=2*PI/taw;
+
+    float t[1000];
+    for(int i=0;i<=nsize;i++){
+        t[i]=i*(taw/nsize);
+        for(int n=1;n<4;n++){
+            float nw=n*w;
+            float Bn=0;
+            Bn= Bn + (   -cos(nw*s[1])*s[1]/nw +sin(nw*s[1])/nw^2    )*H[1]/s[1];
+
+            Bn= Bn + (-(l[2]*cos(nw*l[2]))/nw  +  s[1]*cos(nw*s[1])/nw  +  sin(nw*l[2])/nw^2-sin(nw*s[1])/nw^2)*(L-H[1])/s[2];
+            Bn= Bn - (H[1]-s[1]*(L-H[1])/s[2])*(cos(nw*l[2])-cos(nw*s[1]))/nw;
+
+            Bn= Bn + (-cos(nw*l[3])/nw + cos(nw*l[2])/nw)*L;
+
+            Bn= Bn + (-l[4]*cos(nw*l[4])/nw+l[3]*cos(nw*l[3])/nw+sin(nw*l[4])/nw^2-sin(nw*l[3])/nw^2)*(H[2]-L)/s[4];
+            Bn= Bn + ((H[2]-L)*(-l[3])/s[4]+L)*(cos(nw*l[3])-cos(nw*l[4]))/nw;
+
+            Bn= Bn + (l[5]*cos(nw*l[5])/nw-l[4]*cos(nw*l[4])/nw-sin(nw*l[5])/nw^2+sin(nw*l[4])/nw^2)*H[2]/s[5];
+            Bn= Bn + (H[2]*l[5]/s[5])*(-cos(nw*l[5])+cos(nw*l[4]))/nw;
+
+            Bn=Bn*2/taw;
+
+            predictValue[i] = predictValue[i] + Bn*sin(nw*t[i]);
+
+            float An=0;
+
+            An= An + ( sin(nw*s[1])*s[1]/nw +(cos(nw*s[1])-1)/nw^2 )*H[1]/s[1];
+
+            An= An + ((l[2]*sin(nw*l[2]))/nw  -  s[1]*sin(nw*s[1])/nw  +  cos(nw*l[2])/nw^2-cos(nw*s[1])/nw^2)*(L-H[1])/s[2];
+            An= An + (H[1]-s[1]*(L-H[1])/s[2])*(sin(nw*l[2])-sin(nw*s[1]))/nw;
+
+            An= An + (sin(nw*l[3]) - sin(nw*l[2]))*L/nw;
+
+            An= An + (l[4]*sin(nw*l[4])/nw-l[3]*sin(nw*l[3])/nw   +  cos(nw*l[4])/nw^2-cos(nw*l[3])/nw^2)*(H[2]-L)/s[4];
+            An= An + ((H[2]-L)*(-l[3])/s[4]+L)*(sin(nw*l[4])-sin(nw*l[3]))/nw;
+
+            An= An + (l[5]*sin(nw*l[5])/nw-l[4]*sin(nw*l[4])/nw  +  cos(nw*l[5])/nw^2-cos(nw*l[4])/nw^2)*(-H[2])/s[5];
+            An= An + (H[2]*l[5]/s[5])*(sin(nw*l[5])-sin(nw*l[4]))/nw;
+
+            An=An*2/taw;
+
+            predictValue[i] = predictValue[i] + An*cos(nw*t[i]);
+        }
+        predictValue[i]= predictValue[i] + (s[1]*H[1]+(L+H[1])*s[2]+2*s[3]*L+(L+H[2])*s[4]+s[5]*H[2])/(2*taw);
+    }
+*/
+}
+
+void leadFunction(float diff,float Gyro){
+/*
+    switch(CheckingStep){
+        case 0:
+            if(diff>0 && Gyro>0.5){
+                stepstart=step;
+                s_time[0] = time();
+                CheckingStep=1;
+            }
+            break;
+        case 1:
+            if(Gyro>v_high[0]){
+                s_time[1] = time();
+                v_high[0] = Gyro;
+            }
+            if(Gyro<0){
+                s_timeinterval[0]=s_time[1]-s_time[0];
+                CheckingStep=2;
+            }
+        case 2:
+            if(diff>0 || Gyro<averL)
+                st(3) = etc(i,1);
+                s(2)=st(3)-st(2);
+                CheckingS=3;
+            end
+            if(Gyro(i,2)<L)
+                 L=Gyro(i,2);
+            end
+        case 3:
+            if(diff(i)>0 || Gyro(i,2)>averL)
+                st(4) = etc(i,1);
+                s(3)=st(4)-st(3);
+                CheckingS=4;
+            end
+            if(Gyro(i,2)<L)
+                 L=Gyro(i,2);
+            end
+        case 4:
+            if(Gyro(i,2)>H(2))
+                st(5) = etc(i,1);
+                H(2) = Gyro(i,2);
+            end
+            if(Gyro(i,2)<0.5 && st(5)~=-1)
+                s(4)=st(5)-st(4);
+                CheckingS=5;
+            end
+
+        case 5:
+            if(Gyro(i,2)<0.5 && diff(i)<0.5)
+                s(5)=etc(i,1)-st(5);
+
+                GetFourier(s,H,L,i-istart);
+
+                st=[-1,-1,-1,-1,-1,-1];
+                s=[-1,-1,-1,-1,-1];
+                H=[1,1];
+                L=-2;
+
+                CheckingS=0;
+            end
+    }
+    step++;
+*/
+
+}
+
+//Step 분석
 void readStep() {
     sensors_event_t angVelocityData, linearAccelData;
     bno.getEvent(&angVelocityData, Adafruit_BNO055::VECTOR_GYROSCOPE);
@@ -29,6 +162,7 @@ void readStep() {
 
     float diff = (y - oldgyroY) / LOOP_DELAY;
 
+//Swing 분석
     if (diff > 0.06 && swingCheck <= 0) {
         IsSwing = !IsSwing;
         swingCheck = 200;
@@ -50,11 +184,21 @@ void readStep() {
 
     if(swingCheck>0)
         swingCheck-= LOOP_DELAY;
-        
+
     oldgyroY = y;
+//step 예측
+/*  초기값
+    float s_timeinterval={-1,-1,-1,-1,-1,-1};
+    float s_time={-1,-1,-1,-1,-1};
+    float v_high={1,1};
+    float v_low=-2;
+*/
+
+
+
 }
 
-//루프마다 모터 함수
+//루프마다 모터
 void motorWork() {
     if (target_pressure - current_pressure != 0 && target_pressure != 0) {
         //모터의 방향 설정
@@ -89,18 +233,19 @@ void motorWork() {
     }
 }
 
-
+//모터 리셋
 void motorReset() {
   Serial.print("motor Reset");
   digitalWrite(MOTOR_DIR, LOW);
-  while(motor_current_degree > 10){ 
+  while(motor_current_degree > 10){
     analogWrite(MOTOR_PWM, 100);
     Serial.print("motor_current_degree : ");
-    Serial.println(motor_current_degree); 
+    Serial.println(motor_current_degree);
   }
+  analogWrite(MOTOR_PWM, 0);
 }
 
-//셋업 함수
+//셋업
 void setup() {
     Wire.begin(); // I2C 초기화(Master Mode)
     Serial.begin(115200); // UART 초기화 9600bps
@@ -181,7 +326,7 @@ void setup() {
     Serial.println("start autopressing");
 }
 
-//압력센서 값을 받아 걸음걸이 분석 함수
+//압력센서 값을 받아 걸음걸이 분석
 void checkingPressureSensor(int val) {
     if (val >= SENSOR_CRITICAL_VALUE) {//압력센서가 일정한 값 이상일때 작동
         if (preMillis != 0) {
@@ -201,7 +346,7 @@ void checkingPressureSensor(int val) {
     }
 }
 
-//루프 함수 ///////////////////////////////////////////////////////////////////////////////////////////
+//루프
 void loop() {
     unsigned long mfirst = millis();
 
@@ -227,7 +372,7 @@ void loop() {
       sensorDelay--;
       if(sensorDelay<0) sensorDelay=0;
     }*/
-    
+
     readStep();
 
     //모터 함수
@@ -252,6 +397,7 @@ void loop() {
     unsigned long code_time = msecond - mfirst;
     delay(LOOP_DELAY - code_time);
 }
+
 //--------------------------------------------------------------------------------------------------------------------
 void printEvent(sensors_event_t* event) {
     double x = -1000000, y = -1000000, z = -1000000; //dumb values, easy to spot problem
@@ -308,7 +454,7 @@ void printEvent(sensors_event_t* event) {
     Serial.print(" |\tz= ");
     Serial.println(z);
 }
-//---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------
 // 압력센서 모듈에서 압력 및 온도 Raw Data를 Fetch
 void DataFetch_ISEN_P10K(void) {
     int i = 0;
